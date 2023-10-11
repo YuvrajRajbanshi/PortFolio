@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* background: #1a1a29; */
+  background: var(--primary-color);
+  width: 100%;
+
+  /* height: 100vh; */
+}
+
+/* variabe declartion  */
+
+:root {
+  --primary-color: #edf2fc;
+  --secondry-color: #212121;
+}
+.dark-theme {
+  --primary-color: #000106;
+  --secondry-color: #fff;
+}
+img.logo {
+  width: calc(3vw + 10px);
+
+  border-radius: 50%;
+}
+.navsection {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #b3e0ff;
+  /* transition: 0.5s ease-out; */
+  /* background: var(--secondry-color); */
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar a {
+  /* color: white; */
+  color: var(--secondry-color);
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.navbar-burger {
+  display: none;
+  /* border: solid thin #000; */
+  flex: 1;
+  cursor: pointer;
+}
+
+.navbar-burger ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar-burger ul li {
+  list-style: none;
+}
+.navbar-burger a {
+  /* color: white; */
+  color: var(--secondry-color);
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+img#sun {
+  width: 40px;
+}
+.textAbt {
+  /* color: white; */
+  color: var(--secondry-color);
+  margin-top: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.heading2 {
+  font-weight: bold;
+  font-size: 45px;
+}
+.name {
+  font-size: 35px;
+  margin-left: 120px;
+  color: #c266ff;
+}
+/* .paragraph {
+  margin-left: 125px;
+  letter-spacing: 1px;
+  text-align: justify;
+} */
+
+.paraButton {
+  margin-left: 125px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+img.elipse {
+  width: 380px;
+  position: relative;
+}
+
+img.yuvi {
+  width: 220px;
+}
+.yuvi {
+  filter: drop-shadow(10px 0px 50px #86dbf3);
+  position: absolute;
+  left: 72%;
+  margin-bottom: 87px;
+}
+
+/* From here both button  */
+
+.button {
+  margin-left: 400px;
+}
+
+.btn1 {
+  margin-top: 20px;
+  cursor: pointer;
+}
+button.btn1 {
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+button.firstBtn {
+  background: #7562e0;
+  /* color: white; */
+  color: var(--secondry-color);
+  outline: none;
+  transition: 0.5s;
+}
+button.firstBtn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.secondBtn {
+  /* color: white; */
+  color: var(--secondry-color);
+  background: transparent;
+  margin-left: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.secondBtn:hover {
+  color: #6666ff;
+  background: #99ffff;
+  transform: scale(1.1);
+}
+
+/* About me part */
+
+.empty {
+  width: 100%;
+  height: 10vh;
+  /* background: #181824; */
+  margin-top: 30px;
+}
+
+.aboutMe {
+  /* color: white; */
+  color: var(--secondry-color);
+  /* background: #181824; */
+  margin: 40px 150px;
+}
+.statement {
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.aboutMe h1 {
+  color: #6666ff;
+  font-size: 34px;
+}
+
+/* skill boxes or what is relavent to coding */
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background: transparent; */
+}
+.box1 {
+  width: 250px;
+  height: 200px;
+  background: #6666ff;
+  margin: 10px;
+  border: 1px white solid;
+  /* color: white; */
+  color: var(--secondry-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  text-align: justify;
+}
+img.webdev {
+  width: 40px;
+  /* margin-top: 8px; */
+}
+.box1 h2 {
+  margin-top: 5px;
+}
+
+.box1 p {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+/* from here start for project styling okay */
+
+.projectText {
+  /* color: white; */
+  margin: 30px 60px;
+}
+.projectText h1 {
+  color: #c266ff;
+  font-size: 30px;
+  color: var(--secondry-color);
+}
+.projectText p {
+  font-size: 20px;
+}
+img.proWeb {
+  width: 100px;
+}
+
+.box1 h2 {
+  font-size: 30px;
+}
+.proWeb1 {
+  background: #7562e0;
+}
+
+.codeBtn {
+  margin-top: 20px;
+  padding: 8px;
+}
+.code1 {
+  padding: 8px;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.code1 a {
+  text-decoration: none;
+}
+
+.code2 {
+  padding: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.code2:hover {
+  background: #c266ff;
+}
+.code2 a {
+  text-decoration: none;
+}
+
+.proWeb2 {
+  background: transparent;
+}
+
+/* footer is starting from here */
+
+.footer {
+  color: white;
+  margin: 30px 60px;
+}
+.footer h1 {
+  color: #c266ff;
+  font-size: 30px;
+}
+.footer p {
+  font-size: 20px;
+  color: var(--secondry-color);
+}
+.appLink {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-around;
+  background: white;
+}
+.appLink img {
+  width: 40px;
+}
+
+/* this is for the laptop desktop or monitor */
+
+@media only screen and (max-width: 820px) {
+  .boxes {
+    flex-direction: column;
+  }
+  img.yuvi {
+    margin-left: -60px;
+  }
+
+  img.elipse {
+    width: 280px;
+    position: relative;
+  }
+  .heading2 {
+    font-size: 30px;
+    margin-left: 60px;
+  }
+
+  img.yuvi {
+    width: 200px;
+  }
+
+  .yuvi {
+    filter: drop-shadow(10px 0px 50px #86dbf3);
+    position: absolute;
+    left: 72%;
+    margin-bottom: 129px;
+  }
+}
+
+/* this is for mobile okay */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  .navbar-burger ul li {
+    list-style: none;
+    margin: 20px;
+  }
+
+  .navbar-burger ul {
+    display: none;
+  }
+
+  .navsection {
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.7s ease-out;
+  }
+}
